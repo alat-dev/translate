@@ -1,0 +1,61 @@
+:root{
+  --primary-color: #240E88 ;
+  --secondary-color: #3C4CAD;
+  --additional-color: #F04393;
+  --additional-color2: #F9C449;
+  --additional-color3: #E8A49C;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.formulir{
+    /*background-color: var(--additional-color3);*/
+    width: 90%;
+    padding: 10px;
+    padding-top: 0px;
+}
+.formulir h2{
+    text-align: center;
+    
+}
+.formulir input{
+    width: 100%;
+}
+.formulir div{
+    margin-top: 3px;
+}
+#pilih{
+    width: 100%;
+
+}
+.perhatian{
+ font-size: 0.8rem;
+}
+
+.card-header{
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-rangkuman{
+    border-radius: 10px;
+    border: 0px;
+    height: 40px;
+    margin: 10px;
+    width: 95%;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.btn-rangkuman:hover{
+
+    background-color: var(--secondary-color);
+}
+.row div{
+
+}

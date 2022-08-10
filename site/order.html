@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Order Form</title>
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="order.css">
+ 	<!-- @TODO: replace SET_YOUR_CLIENT_KEY_HERE with your client key -->
+    <!-- <script type="text/javascript"
+      src="https://app.sandbox.midtrans.com/snap/snap.js"
+      data-client-key="SB-Mid-client-ERzCzlJel9XdTXOM"></script> -->
+
+    <!-- Note: replace with src="https://app.midtrans.com/snap/snap.js" for Production environment -->
+  	<!-- <script type="" src="bundle.js"></script> -->
+
+</head>
+<body>
+	<div class="container-fluid formulir card">
+		<div class="row">
+			<div class="card-header">Order Form</div>
+			<div class="col-6 col-md-4">
+				<div>Nama Depan*</div>
+				<input type="text" name="Nama Depan" class="form-control" id="validationServer03" placeholder="<nama sesuai dokumen>" required>
+				<div class="invalid-feedback">
+        		
+      			</div>
+			</div>
+			<div class="col-6 col-md-4">
+				<div>Nama Belakang</div>
+				<input type="text" name="Nama Belakang" class="form-control" id="validationServer03" placeholder="<nama sesuai dokumen>">
+			</div>
+			<div class="col-12 col-md-4">
+				<div> Email</div>
+				<input type="email" name="" class="form-control" id="validationServer03" placeholder="" required>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<div> Student ID (Sekolah)</div>
+				<input type="text" name="" class="form-control" id="validationServer03" placeholder="" >
+			</div>
+			<div class="col-6">
+				<div> Student ID (NISN)</div>
+				<input type="text" name="" class="form-control" id="validationServer03" placeholder=""  >
+			</div>
+		</div>
+
+		<div class="row">		
+			<div class="col-11" style="width: 100%;">
+				<span> Jasa :</span>
+				<select id="pilih" class="form-control">
+					<option>Rapot Semester 1-5 (Rp. 40000)</option>
+					<option>Rapot Semester 1-6 (Rp. 50000)</option>
+					<option>Transkrip Rapot Semester 1-5 (Rp. 25000)</option>
+					<option> Transkrip Rapot Semester 1-6 (Rp. 30000)</option>
+					<option></option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">	
+				PDF Documents 
+			</div>
+			<div class="col-12"> 
+				<input type="file" name="" accept="application/pdf" class="form-control" >
+			</div>
+
+		</div>
+
+
+		<div class="row perhatian">
+			<div > Perhatian! </div>
+			<div> 1. Pastikan email yang diberikan adalah Benar dan Valid karena hasil translate akan dikirim melalui email.</div>
+			<div> 2. Permintaan revisi maksimal satu kali dan hanya boleh diajukan via email yang tertera.</div>
+			<div> 3. Hasil translate dikirim <b>paling lambat 72 jam</b> setelah pembayaran, dan <b>paling cepat 1 jam</b> setelah pembayaran</div>
+		</div>
+
+		<div class="row" style="justify-content: center;">
+			<button id="pay-button"class="btn-rangkuman"><b> Next :</b> Rangkuman dan Pembayaran</button>
+		</div>
+
+
+	</div>
+	
+<!--<button id="pay-button">Pay!</button> -->
+ 
+
+
+    <!-- <script type="text/javascript">
+      // For example trigger on button clicked, or any time you need
+      var payButton = document.getElementById('pay-button');
+      payButton.addEventListener('click', function () {
+        // Trigger snap popup. @TODO: Replace TRANSACTION_TOKEN_HERE with your transaction token
+
+        window.snap.pay( "abceeee", {
+          onSuccess: function(result){
+            /* You may add your own implementation here */
+            alert("payment success!"); console.log(result);
+          },
+          onPending: function(result){
+            /* You may add your own implementation here */
+            alert("wating your payment!"); console.log(result);
+          },
+          onError: function(result){
+            /* You may add your own implementation here */
+            alert("payment failed!"); console.log(result);
+          },
+          onClose: function(){
+            /* You may add your own implementation here */
+            alert('you closed the popup without finishing the payment');
+          }
+        // customer will be redirected after completing payment pop-up
+
+      }
+      )
+ 
+  });
+    </script> -->
+
+
+
+
+
+  	<script src="assets/vendor/aos/aos.js"></script>
+  	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  	<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  	<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+ 	<script src="assets/vendor/php-email-form/validate.js"></script>
+ 	<!-- <script type="text/javascript"
+      src="https://app.sandbox.midtrans.com/snap/snap.js"
+      data-client-key="SB-Mid-client-ERzCzlJel9XdTXOM"></script>
+
+     Note: replace with src="https://app.midtrans.com/snap/snap.js" for Production environment -->
+
+  	<!-- <script type="" src="bundle.js"></script> --> -->
+</body>
+</html>
